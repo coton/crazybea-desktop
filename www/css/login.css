@@ -1,0 +1,19 @@
+/*-- login.html
+====================================================== */
+body{background-color: rgb(255,209,69); width: 100%; height: 100%;}
+img{max-width: 100%;}
+
+.container{ position:absolute; width: 100%; height: 100%; min-width: 960px; min-height: 540px; text-align: center; }
+
+.login .layout-logo{ width:48%; height: 100%; margin: 0px 3% auto 6%; float: left;}
+.login .layout-form{ min-width: 190px; min-height: 205px; width: 19%; height: 36%; margin: 17% 20% auto 2%; float: left; float: left;}
+.login .layout-form input{background-color: transparent; border: 0px; width: 80%; height: 100%; font-size: 1.5rem;}
+.login .layout-form .email{background-image: url(../img/login/input-bg.png); background-repeat: no-repeat; background-size:100% 100%; width: 19%; height: 7%; position: absolute;}
+.login .layout-form .password{background-image: url(../img/login/input-bg.png); background-repeat: no-repeat; background-size:100% 100%; width: 19%; height: 7%; position: absolute;  gray; margin-top:5%; }
+.login .layout-form .signin{background-image: url(../img/login/btn-bg.png); background-repeat: no-repeat; background-size:100% 100%; width: 19%; height: 7%; position: absolute; margin-top:10%;}
+.login .layout-form .rememberme{background-image: url(../img/login/rememberme.png); background-repeat: no-repeat; background-size:100% 100%; width: 12.5%; height: 2.5%; position: absolute; margin: 15% 3.5% 0px 3.5%;}
+.login .layout-form .rememberme-i{background-image: url(../img/login/rememberme-i.png); background-repeat: no-repeat; background-size:100% 100%; width: 1.5%; height: 1.8%; position: absolute; margin: 15% 3.5% 0px 3.5%;}
+
+
+.login .layout-foot{ width: 100%; height: 5%; text-align: center; position: fixed; bottom:5%;}
+.login .copyright{ color: #fff; font-size: .8rem;}

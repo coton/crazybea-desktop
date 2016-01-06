@@ -1,0 +1,11 @@
+{
+  "amd": {},
+  "volo": {
+    "baseUrl": "www/lib",
+    "dependencies": {
+      "jquery": "github:jquery/jquery/2.1.4",
+      "bootstrap3": "github:mjhea0/bootstrap3/master",
+      "highcharts": "github:highcharts/highcharts/v4.2.1"
+    }
+  }
+}
