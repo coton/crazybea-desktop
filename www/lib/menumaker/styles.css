@@ -12,15 +12,16 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #000;
+  background: #2c240c;
+  text-align: left;
 }
 #cssmenu {
   width: 100%;
-  height: 100%;
-  margin-top: 50%;
   font-family: Helvetica, Arial, sans-serif;
-  color: #ffffff;
-
+  color: #ffd145;
+  position: absolute;
+  top:30%;
+  width: 12%;
 }
 #cssmenu ul ul {
   display: none;
@@ -30,30 +31,22 @@
 }
 #cssmenu > ul > li > a {
   padding: 15px 20px;
-  border-left: 1px solid #1682ba;
-  border-right: 1px solid #1682ba;
-  border-top: 1px solid #1682ba;
+  border-bottom: 1px solid #6e5e32;
   cursor: pointer;
   z-index: 2;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
   text-decoration: none;
-  color: #ffffff;
+  color: #ffd145;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
-  background-color: #000;
-  background: #000;
+  background: #2c240c;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li.open > a {
   color: #eeeeee;
-  background: #000;
-  background: -webkit-linear-gradient(#1fa0e4, #1992d1);
-  background: -moz-linear-gradient(#1fa0e4, #1992d1);
-  background: -o-linear-gradient(#1fa0e4, #1992d1);
-  background: -ms-linear-gradient(#1fa0e4, #1992d1);
-  background: linear-gradient(#000000, #000);
+  color: #ffd145;
+  background: #2c240c;
 }
 #cssmenu > ul > li.open > a {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -69,6 +62,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  margin-top: 8px;
 }
 .holder::after,
 .holder::before {
@@ -111,15 +105,15 @@
   z-index: 1;
   text-decoration: none;
   font-size: 13px;
-  color: #eeeeee;
-  background: #49505a;
+  color: #c2a239;
+  background: #2c240c;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li.open > a,
 #cssmenu ul ul li.active > a {
   background: #424852;
-  color: #ffffff;
+  color: #c2a239;
 }
 #cssmenu ul ul li:first-child > a {
   box-shadow: none;
@@ -163,3 +157,10 @@
 #cssmenu ul ul li > a:hover::after {
   border-color: #ffffff;
 }
+
+
+
+
+#cssmenu ul li img{width: 30px; height: 30px; margin-right: 10px; margin-bottom: -5px;}
+
+#cssmenu ul li.has-sub img{width: 28px; height: 28px; margin-right: 10px; margin-bottom: -5px;}
