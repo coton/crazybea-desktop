@@ -1,4 +1,5 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html {
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
@@ -682,8 +683,8 @@ a {
 
 	color: #ffd044;
 	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 80px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
 .nav-bar h2 {
@@ -820,7 +821,7 @@ a {
 	display: inline-block;
 	color: #ffd145;
 	overflow: hidden;
-	margin-right:20px;
+	margin-right:10px;
 }
 
 .bee-cell .top {
@@ -1050,4 +1051,10 @@ a {
 
 .bee-cell.type-5 .bot {
 	border-top-color: #7c9440
+}
+
+
+.bee-cell.small-vertical {
+	display: block;
+	margin-bottom: 20px;
 }

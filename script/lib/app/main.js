@@ -587,8 +587,8 @@ function(e) {
             display: "none"
         }), e.removeClass(t), n = e.data("type"), n && a.trigger(n + ".off", e))
     }
-    function o() {
-        var e = ["treemenu"];
+    function o(m) {
+        var e = [m];
         r.each(e,
         function(e, t) {
             r('[data-type="' + t + '"]').each(function(e, t) {
@@ -605,11 +605,12 @@ function(e) {
     function(e) {
         var a = r(e.target),
         i = a.data("toggle"),
+        m = r(i).data("type"),
         l = "visible";
-        if(i)
+        if(i && r(i).attr("class").indexOf("visible") == -1)
         {
             i || (a = a.closest("[data-toggle]"), i = a.data("toggle")),
-            i ? (l = a.data("toggle-class") || l, a = r(i), a.length ? a.hasClass(l) ? (o(), n(a, l)) : (o(), t(a, l)) : o()) : o()
+            i ? (l = a.data("toggle-class") || l, a = r(i), a.length ? a.hasClass(l) ? (o(m), n(a, l)) : (o(m), t(a, l)) : o(m)) : o(m)
         }
     }),
     a.hideAll = o,
