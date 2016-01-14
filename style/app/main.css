@@ -684,20 +684,29 @@ a {
 	color: #ffd044;
 	text-align: center;
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 70px
 }
 
-.nav-bar h2 {
+.nav-bar-left {
+
+	text-align:left;
+	padding-top:20px; 
+	padding-bottom: 0px
+}
+
+.nav-bar h2,.nav-bar-left h2 {
 	margin: 0;
 	font-weight: 400;
 	font-size: 2rem;
-	color: #5b4b19;
+	color: #5b4b19
 }
 
-.nav-bar h3 {
+.nav-bar h3,.nav-bar-left h3 {
 	margin: 0;
 	font-weight: 400;
-	font-size: 1.8rem
+	color:#5b4b19; 
+	font-size:1.4em; 
+	margin-top:10px
 }
 
 .app-menu {
@@ -898,33 +907,33 @@ a {
 }
 
 .bee-cell.small {
-	width: 50px;
-	height: 56px
+	width: 80px;  
+	height: 88px
 }
 
 .bee-cell.small .top {
-	border-bottom: 14px solid #5d5d5d;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
+	border-bottom: 22px solid #5d5d5d;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
 	width: 0;
 	position: relative
 }
 
 .bee-cell.small .mid {
-	height: 28px;
+	height: 44px;
 	background-color: #5d5d5d
 }
 
 .bee-cell.small .bot {
-	border-top: 14px solid #5d5d5d;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
+	border-top: 22px solid #5d5d5d;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
 	width: 0;
 	position: relative
 }
 
 .bee-cell.small .content {
-	font-size: .8rem
+	font-size: 1.2rem
 }
 
 .bee-cell.small .content .inner {
@@ -932,7 +941,7 @@ a {
 }
 
 .bee-cell.small.active .top {
-	border-bottom: 14px solid #fff
+	border-bottom: 22px solid #fff
 }
 
 .bee-cell.small.active .mid {
@@ -940,7 +949,7 @@ a {
 }
 
 .bee-cell.small.active .bot {
-	border-top: 14px solid #fff
+	border-top: 22px solid #fff
 }
 
 .bee-cell.type-1.outline {
