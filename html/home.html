@@ -115,7 +115,7 @@
 				         <li><a href='#'><img src="../img/home/sidebar-icon/contactus.png" alt="">Contact Us</a></li>
 				         <li><a href='#'><img src="../img/home/sidebar-icon/share.png" alt="">Share</a></li>
 				         <li><a href='login.html'><img src="../img/home/sidebar-icon/switchuser.png" alt="">Switch User</a></li>
-				         <li><a href='#'><img src="../img/home/sidebar-icon/accountadmin.png" alt="">Account Admin</a></li>
+				         <li><a href='/view/accountadmin-list'><img src="../img/home/sidebar-icon/accountadmin.png" alt="">Account Admin</a></li>
 				      </ul>
 				   </li>
 				</ul>
@@ -127,34 +127,34 @@
 			<div class="navbar">
 				<div class="interest menu-sub" id="nav-bar-interest" data-type="navbar">
 					<a href="/view/campaign/shake-percentage-by-area/-/1/event"> 
-					   <div class="bee-cell"> 
+					   <div class="bee-cell-navbar"> 
 					    <div class="left"></div> 
 					    <div class="mid"></div> 
 					    <div class="right"></div> 
 					    <div class="content"> 
-					    	<div class="inner">Percentage by Area</div> 
+					    	<div class="inner" data-toggle-class="outline">Percentage by Area</div> 
 					    </div> 
 					   </div>
 					</a>
 
 					<a href="/view/campaign/total-amount-of-shake-by-area/-/1/event"> 
-					   <div class="bee-cell"> 
+					   <div class="bee-cell-navbar"> 
 					    <div class="left"></div> 
 					    <div class="mid"></div> 
 					    <div class="right"></div> 
 					    <div class="content"> 
-					    	<div class="inner">Amount by Area</div> 
+					    	<div class="inner" data-toggle-class="outline">Amount by Area</div> 
 					    </div> 
 					   </div>
 					</a>
 
 					<a href="/view/campaign/total-shake-by-date/-/1/day"> 
-					   <div class="bee-cell"> 
+					   <div class="bee-cell-navbar"> 
 					    <div class="left"></div> 
 					    <div class="mid"></div> 
 					    <div class="right"></div> 
 					    <div class="content"> 
-					    	<div class="inner">By Date</div> 
+					    	<div class="inner" data-toggle-class="outline">By Date</div> 
 					    </div> 
 					   </div>
 					</a>
@@ -162,23 +162,23 @@
 
 				<div class="engagement menu-sub" id="nav-bar-engagement" data-type="navbar">
 					<a href="/view/campaign/overall-engagement-by-area/-/1/0"> 
-					   <div class="bee-cell"> 
+					   <div class="bee-cell-navbar"> 
 					    <div class="left"></div> 
 					    <div class="mid"></div> 
 					    <div class="right"></div> 
 					    <div class="content"> 
-					    	<div class="inner">By Area</div> 
+					    	<div class="inner" data-toggle-class="outline">By Area</div> 
 					    </div> 
 					   </div>
 					</a>
 
 					<a href="/view/campaign/overall-engagement-by-date/-/1/0"> 
-					   <div class="bee-cell"> 
+					   <div class="bee-cell-navbar"> 
 					    <div class="left"></div> 
 					    <div class="mid"></div> 
 					    <div class="right"></div> 
 					    <div class="content"> 
-					    	<div class="inner">By Time</div> 
+					    	<div class="inner" data-toggle-class="outline">By Time</div> 
 					    </div> 
 					   </div>
 					</a>
@@ -186,7 +186,7 @@
 
 				<div class="conversion menu-sub" id="nav-bar-conversion" data-type="navbar">
 					<a href="/view/campaign/conversion-analysis-by-area/-/1/event"> 
-					   <div class="bee-cell"> 
+					   <div class="bee-cell-navbar"> 
 					    <div class="left"></div> 
 					    <div class="mid"></div> 
 					    <div class="right"></div> 
@@ -225,9 +225,7 @@
 		            o.alerts.alert.hide(),
 		            o.alerts.modal.hide(),
 		            o.dialog.hide(),
-		            o.toggle.hideAll(),
-		            e(document.body).removeClass("app-menu-on")
-		        },
+		            o.toggle.hideAll()		        },
 		        onBeforeFadeOut: function(o) {
 		            var n = a.core.getViewChangeInfo();
 		            if (o) if ("history" != n.from && n.fromModName != n.toModName) {

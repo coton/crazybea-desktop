@@ -612,6 +612,20 @@ function(e) {
             i || (a = a.closest("[data-toggle]"), i = a.data("toggle")),
             i ? (l = a.data("toggle-class") || l, a = r(i), a.length ? a.hasClass(l) ? (o(m), n(a, l)) : (o(m), t(a, l)) : o(m)) : o(m)
         }
+        if(i && r(e.target).data("toggle").indexOf("nav-bar") > -1)
+        {   
+            r(".bee-cell-navbar").each(function(i, n){
+                r(n).removeClass("outline");
+            });
+            r(i + " .bee-cell-navbar:first").addClass("outline")
+        }
+        if(r(e.target).data("toggle-class"))
+        {   
+            r(".bee-cell-navbar").each(function(i, n){
+                r(n).removeClass("outline");
+            });
+            a.parents(".bee-cell-navbar").addClass("outline")
+        }
     }),
     a.hideAll = o,
     a
