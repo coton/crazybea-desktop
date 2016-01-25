@@ -605,8 +605,13 @@ function(e) {
     function(e) {
         var a = r(e.target),
         i = a.data("toggle"),
+        x = a.data("closenavbar"),
         m = r(i).data("type"),
         l = "visible";
+        if(x)
+        {
+            r("div[data-type].visible").hide();
+        }
         if(i && r(i).attr("class").indexOf("visible") == -1)
         {
             i || (a = a.closest("[data-toggle]"), i = a.data("toggle")),
@@ -615,15 +620,18 @@ function(e) {
         if(i && r(e.target).data("toggle").indexOf("nav-bar") > -1)
         {   
             r(".bee-cell-navbar").each(function(i, n){
-                r(n).removeClass("outline");
-            });
+                if(r(n).attr("class").indexOf("timerange") == -1)
+                    r(n).removeClass("outline");
+            })
             r(i + " .bee-cell-navbar:first").addClass("outline")
+            r("div[data-type].visible").show();
         }
         if(r(e.target).data("toggle-class"))
         {   
             r(".bee-cell-navbar").each(function(i, n){
-                r(n).removeClass("outline");
-            });
+                if(r(n).attr("class").indexOf("timerange") == -1)
+                    r(n).removeClass("outline");
+            })
             a.parents(".bee-cell-navbar").addClass("outline")
         }
     }),
